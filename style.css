@@ -1,0 +1,343 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0%;
+  background-color: black;
+  color: #fff;
+  overflow: hidden;
+  }
+  .main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem 0.5rem;
+
+  }
+  
+  .main-content{
+    background-color:#292828;
+     flex: 1; /* <!-- take allthe remaing space after giving required space to other div --> */
+     border-radius: 1rem;
+     overflow: auto; 
+     margin: 0rem 0 0.5rem 0.5rem;
+     padding: 0 1rem 0 1rem;
+  }
+  .music-player{
+    background-color: #e7cdcd;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+  }
+  .sidebar{
+    background-color:#292828;
+    width: 300px;
+    border-radius: 1rem; /* 1rem = 16px*/
+    padding-top: 0.5rem;
+  }
+  .options{
+    background-color: rgb(87, 85, 85);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  a{
+    text-decoration:none;
+    color: #fff;
+    
+  }
+  .navoptions{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.navoptions:hover{
+    line-height: 2.5rem;
+    opacity: 1;
+}
+.navoptions i{
+    font-size: 1.5;
+}
+.navoptions a{
+    font-size: 1rem;
+}
+.library{
+    background-color: rgb(87, 85, 85);
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.library-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.library-option1 img{
+    height: 15px;
+    width: 18px;
+}
+.icon{
+  opacity: 0.7;
+  margin: 1rem;
+}
+.library-option2{
+  background-color: rgb(122, 120, 120);
+  border-radius: 00.75rem;
+  /* margin: 0.5 0 0.5 0; */
+  padding: 0.5rem 0.8rem;
+  }
+.paragraph1{
+  font: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}  
+.paragraph2{
+  font: 0.2rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}  
+.badge{
+  color: rgb(15, 15, 15);
+  border-radius: 1.5rem;
+  background-color: #fff;
+  border-color: white;
+  padding: 0.24 1rem;
+  font-weight: 600;
+  width: fit-content;
+
+  }
+.badge p{
+  font-size: small;
+  margin: 0.1rem 0.1rem;
+}
+.library-option3{
+  background-color: rgb(122, 120, 120);
+  border-radius: 00.75rem;
+  margin: 0.5 0 0.5 0;
+  padding: 0.5rem 0.8rem;
+  margin-top: 0.5rem
+}
+.sticky-nav{
+  position: sticky;
+  background-color: #292828;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+.sticky-option2{
+  justify-content: center;
+  /* align-items: center; */
+  /* display: flex; */
+  margin-right: 0.5rem;
+  
+}
+.sticky-option1 img{
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-left: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.5rem;
+}
+.sticky-option2 button{
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+
+.dark-badge{
+  color: rgb(255, 252, 252);
+  border-radius: 1.5rem;
+  background-color: #000000;
+  border-color: black;
+  padding: 0.24 1rem;
+  font-weight: 600;
+  width: fit-content;
+}
+@media (max-width: 1000px){  /*used to hide somthing when screen size changes */
+  .hide{
+    display: none;
+  }
+}
+.card-container{
+  background-color: rgb(122, 120, 120);
+  width: 130px;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.card-img{
+  width: 130px;
+  border-radius: 0.5rem;
+}
+.card-title{
+  font-weight: 600;
+}
+.card-info{
+  opacity: 80%;
+  font-size: 0.8rem;
+}
+.footer{
+  height: 300px;
+  display: flex;
+   align-items: center;                 /*      Know it and also search z-index */
+  justify-content: center;
+}
+.line{
+  width: 90%;
+  height: 30%;
+  border-top: 1px solid white;
+  opacity: 50%;
+}
+
+.music-player {
+  background: #181818;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  border-top: 1px solid #333;
+}
+
+.player-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 25%;
+}
+
+.player-left img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.song-details p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.song-details span {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.player-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.play-btn {
+  font-size: 1.8rem;
+  color: #1db954;
+}
+
+.controls button:hover {
+  color: #1db954;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+#progress {
+  flex: 1;
+  cursor: pointer;
+}
+
+.player-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 20%;
+  justify-content: flex-end;
+}
+
+#volume {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .music-player {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  .player-left, .player-right {
+    display: none;
+  }
+  .player-center {
+    width: 100%;
+  }
+}
+/* Hover effect for music cards */
+.card-container {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.card-img {
+  transition: opacity 0.3s ease;
+}
+
+.card-container:hover .card-img {
+  opacity: 0.8;
+}
+
+/* Optional play icon on hover */
+.card-container::after {
+  content: "\f04b"; /* Font Awesome play icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card-container:hover::after {
+  opacity: 1;
+}
